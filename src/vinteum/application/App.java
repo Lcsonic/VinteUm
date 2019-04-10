@@ -50,8 +50,10 @@ public class App {
 				int vitoria_jogadorJva = 0, derrota_jogadorJva = 0;
 				
 				//Estanciando classes
-				Jogador j = new Jogador();
-				JogadorDAO jDAO = new JogadorDAO();  //Eu errei o nome da classe jogadorDAO, ela esta escrita sem o ultimo r "JogadoDAO"
+				
+				Jogador j = new Jogador(nome_jogadorJva);
+				
+				JogadorDAO jDAO = new JogadorDAO();  
 				
 				Scanner string = new Scanner(System.in);
 				
@@ -70,6 +72,10 @@ public class App {
 						System.out.println("");
 						System.out.print("	Nome: ");
 						nome_jogadorJva = string.nextLine();
+						
+						j = new Jogador(nome_jogadorJva);
+						jDAO = new JogadorDAO();
+						jDAO.salvarJog(j);
 						
 					break;
 					

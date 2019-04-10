@@ -17,7 +17,7 @@ public class JogadorDAO {
 	public void salvarJog(Jogador j) throws SQLException {					//botões rapidos:  ? /
 		
 		StringBuilder sql = new StringBuilder();
-		sql.append("CALL `jogo`.`PROC_SALVAR_JOGADOR`( ?, ?, ? );");
+		sql.append("CALL `jogo`.`PROC_SALVAR_JOGADOR`(?);");
 		
 		Connection conexao = ConexaoFactory.conectar();  	// Linha de comando que abre conexão
 		

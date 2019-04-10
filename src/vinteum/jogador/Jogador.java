@@ -6,7 +6,17 @@ public class Jogador {
 	private String nome_jogadorJva;		//Variavei com sufixos "Jva"
 	private int vitoria_jogadorJva;		//são variaveis do Java para 
 	private int derrota_jogadorJva;		//diferenciar das do banco
-										
+						
+	
+	public Jogador(String nome_jogadorJva){
+		this.nome_jogadorJva = nome_jogadorJva;
+	}
+	
+	public Jogador(){
+		
+	}
+	
+	
 	public long getId_jogadorJva() {
 		return id_jogadorJva;
 	}
