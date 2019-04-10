@@ -8,6 +8,15 @@
 * Finalidade do Software: Jogo Vinte Um de Boca
 ******************************************************************************** */
 
+/*
+ANOTAÇÃO IMPORTANTE
+	CASO ERRO EM IMPORTAÇÃO SEGUIR OS PASSOS:
+		1 - clique com o direito no projeto;
+		2 - Va me build path;
+		3 - Dentro do build path, abrir Libaries;
+		4 - Add libarie, JRE library.
+*/
+
 package vinteum.application;
 
 import java.lang.invoke.SwitchPoint;
@@ -61,7 +70,40 @@ public class App {
 				
 				switch (opcao) {
 					case 1:	 //Jogo
-					
+						System.out.println("		Começar a jogar..		");
+						System.out.println("");
+						System.out.println("	Digite uma opção:			");
+						System.out.println("");
+						System.out.println("	1 - jogar 2x2");
+						System.out.println("	2 - jogar vs Maquina");
+						System.out.println("");
+						System.out.println("");
+						
+						//Resposta
+						System.out.print("	Digite opçao: ");
+						
+						int opcao2 = scan.nextInt();
+						
+						String start2 = "on";
+						
+						switch(opcao2) {
+						
+							case 1:
+								
+								
+								
+							break;
+							
+							case 2:
+								
+								
+								
+							break;
+						
+						}
+						
+						
+						
 					break;
 					
 					case 2:  //Adicionar
