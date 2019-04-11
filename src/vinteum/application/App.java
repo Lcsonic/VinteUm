@@ -59,6 +59,9 @@ public class App {
 				
 				switch (opcao) {
 					case 1:	 //Jogo
+						
+						System.out.println("works");
+						
 					
 					break;
 					
