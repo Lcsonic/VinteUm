@@ -32,8 +32,6 @@ public class App {
 				System.out.println("");
 				System.out.println("		Menu da aplicação		");
 				System.out.println("");
-				System.out.println("	Digite uma opção:			");
-				System.out.println("");
 				System.out.println("	1 - jogar");
 				System.out.println("	2 - Adicionar Jogador");
 				System.out.println("	3 - listar jogadores");
@@ -43,7 +41,8 @@ public class App {
 				
 				System.out.print("	Digite opçao: ");
 				
-				int opcao = scan.nextInt();		//"opcao" recebe "scan.nextInt" que é responsvael na entrada de dado
+				int opcao = 0;
+				opcao = scan.nextInt();		//"opcao" recebe "scan.nextInt" que é responsvael na entrada de dado
 				
 				long id_jogadorJva = 0;
 				String nome_jogadorJva = null;							//Zzerando os dados para não conflitarem
@@ -60,7 +59,22 @@ public class App {
 				switch (opcao) {
 					case 1:	 //Jogo
 						
-						System.out.println("works");
+						boolean menu2 = true;
+							while (menu == true) {
+								System.out.println("");
+								System.out.println("");
+								System.out.println("		Menu Jogar..");
+								System.out.println("");
+								System.out.println("	1 - jogar 1x1");
+								System.out.println("	2 - vs maquina");
+								System.out.println("");
+								System.out.println("");
+								
+								System.out.print("	Digite opção: ");
+								
+								int opc2 =0;
+								opc2 = scan.nextInt();
+							}
 						
 					
 					break;
